@@ -21,15 +21,17 @@ Aliyun oss filesystem storage adapter for laravel 5. You can use Aliyun OSS just
 
 之前 fork 的 [jacobcyl/Aliyun-oss-storage](https://github.com/jacobcyl/Aliyun-oss-storage) ，自2.1.1版本开始，增加新功能，更改 composer 包名称为：`summergeorge/ali-oss-storage`
 
+fork from [summergeorge/Aliyun-oss-storage](https://github.com/summergeorge/Aliyun-oss-storage) and modify the `readStream` function. Change composer package name to `charmpen/ali-oss-storage`.
+
 ## Installation 
 In order to install AliOSS-storage, just add
 
-    "summergeorge/ali-oss-storage": "^2.1"
+    "charmpen/ali-oss-storage": "^2.1"
 
 to your composer.json. Then run `composer install` or `composer update`.  
 Or you can simply run below command to install:
 
-    "composer require summergeorge/ali-oss-storage:^2.1"
+    "composer require charmpen/ali-oss-storage:^2.1"
     
 Then in your `config/app.php` add this line to providers array:
 ```php
