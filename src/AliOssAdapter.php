@@ -453,7 +453,7 @@ class AliOssAdapter extends AbstractAdapter
             $result['raw_contents']->detachStream();
         } else {
             $result['stream'] = fopen('php://temp', 'r+');
-            fwrite($reault['stream'], $reault['raw_contents']);
+            fwrite($result['stream'], $result['raw_contents']);
         }
         rewind($result['stream']);
         // Ensure the EntityBody object destruction doesn't close the stream
